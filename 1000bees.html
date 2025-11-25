@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        1000 Bees 
+    </h1>
+    <script>
+        // Randomly place bees on the screen
+        const balls = document.querySelectorAll('.ball');
+        balls.forEach(ball => {
+            ball.style.left = Math.random() * window.innerWidth + 'px';
+            ball.style.top = Math.random() * window.innerHeight + 'px';
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            const mouseX = e.clientX;
+            const mouseY = e.clientY;
+
+            balls.forEach(ball => {
+                const rect = ball.getBoundingClientRect();
+                const ballX = rect.left + rect.width / 2;
+                const ballY = rect.top + rect.height / 2;
+
+                const dx = ballX - mouseX;
+                const dy = ballY - mouseY;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+
+                const pushRadius = 120; // How close your mouse needs to get before pushing
+
+                if (distance < pushRadius) {
+                    // Strength of push
+                    const force = (pushRadius - distance) / pushRadius;
+
+                    const moveX = dx * force * 2;
+                    const moveY = dy * force * 2;
+
+                    ball.style.left = (ballX + moveX - rect.width / 2) + 'px';
+                    ball.style.top = (ballY + moveY - rect.height / 2) + 'px';
+                }
+        });
+    });
+</script>
+</body>
+</html>
