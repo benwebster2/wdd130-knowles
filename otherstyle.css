@@ -1,0 +1,147 @@
+/* Basic Reset & Body Styling */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Using a basic font for readability */
+    background-color: #f0f0f0; /* Light grey background for the whole page */
+    display: flex; /* Use flexbox to center the main container if needed */
+    justify-content: center;
+    min-height: 100vh; /* Ensure body takes full viewport height */
+}
+
+.container {
+    width: 90%; /* Overall width of the content */
+    max-width: 960px; /* Max width to prevent it from getting too wide on large screens */
+    background-color: #fff; /* White background for the main content area */
+    border: 1px solid #ccc; /* Border around the main container */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Subtle shadow */
+    margin: 20px 0; /* Top/bottom margin for the container */
+    padding-bottom: 20px; /* Padding at the bottom for content */
+}
+
+/* Header Styling */
+.main-header {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly with space between */
+    align-items: center; /* Vertically center items */
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee; /* Separator line */
+    background-color: #fff;
+    font-size: 1.1em;
+}
+
+.main-header .logo {
+    font-weight: bold;
+}
+
+.main-header .user-profile {
+    flex-grow: 1; /* Allows the profile icon to take available space */
+    display: flex;
+    justify-content: center; /* Center the profile icon */
+    align-items: center;
+}
+
+.main-header .profile-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc; /* Grey background for the icon */
+    border-radius: 50%; /* Makes it a circle */
+    border: 1px solid #999;
+}
+
+.main-header .main-nav .nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: normal;
+}
+
+/* Main Content Styling */
+.main-content {
+    padding: 0 20px; /* Horizontal padding for content inside the container */
+}
+
+.page-title {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 1.8em;
+    color: #333;
+    border-bottom: 1px solid #eee; /* Line under the "Home" title */
+    padding-bottom: 15px;
+}
+
+/* Content Grid Styling */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Space between grid items */
+    margin-top: 30px;
+}
+
+.grid-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    box-sizing: border-box; /* Include padding in element's total width/height */
+}
+
+.grid-item.text-item h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.grid-item.text-item p {
+    font-size: 0.9em;
+    line-height: 1.6;
+    color: #666;
+}
+
+.image-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    color: #aaa;
+    font-size: 3em; /* Size of the icon */
+    position: relative; /* For absolute positioning of the icon */
+    min-height: 180px; /* Ensure images have a minimum height */
+}
+
+.image-placeholder::before {
+    content: "🌄"; /* Placeholder icon using an emoji */
+    position: absolute;
+    font-size: 2em;
+    color: #999;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column; /* Stack header items vertically on small screens */
+        padding: 10px;
+    }
+    .main-header .user-profile {
+        margin: 10px 0; /* Add some spacing */
+    }
+    .main-header .nav-link {
+        margin-top: 5px;
+    }
+    .content-grid {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+    .image-placeholder {
+        min-height: 150px; /* Adjust height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        border: none;
+        box-shadow: none;
+    }
+    .main-content {
+        padding: 0 10px;
+    }
+}
