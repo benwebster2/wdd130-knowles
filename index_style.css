@@ -41,5 +41,6 @@ h1 {
     min-height: 180px; /* Ensure images have a minimum height */
     
 }
-
-
+.bees1000 img{
+width: 46px;
+}
