@@ -1,49 +1,1315 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8" />
+  <title>1000 bees</title>
+   <link type="text/css" rel="stylesheet" href="index_style.css">
+   <link rel="stylesheet" href="index_style.css">
 </head>
-<body>
-    <h1>
-        1000 Bees 
-    </h1>
-    <script>
-        // Randomly place bees on the screen
-        const balls = document.querySelectorAll('.ball');
-        balls.forEach(ball => {
-            ball.style.left = Math.random() * window.innerWidth + 'px';
-            ball.style.top = Math.random() * window.innerHeight + 'px';
-        });
 
-        document.addEventListener('mousemove', (e) => {
-            const mouseX = e.clientX;
-            const mouseY = e.clientY;
+<header>
+  <div id="logo">
+      <a id="logo_link" href="index.html">
+          <img src="images/logo.png" alt="website logo" width="300px">
+      </a>
+  </div>
 
-            balls.forEach(ball => {
-                const rect = ball.getBoundingClientRect();
-                const ballX = rect.left + rect.width / 2;
-                const ballY = rect.top + rect.height / 2;
+  <nav id="nav_bar">
+      <a href="1000bees.html">1000 Bees</a>
+      <a href="index.html">Home</a>
+  </nav>
+</header>
 
-                const dx = ballX - mouseX;
-                const dy = ballY - mouseY;
-                const distance = Math.sqrt(dx * dx + dy * dy);
+  
+  <div class="bee-area">
+    <!-- Add as many as you need -->
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball"> 
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball"> 
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball"><img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball"> 
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball"><img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball"> 
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball"><img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball"> 
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball"><img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball"> 
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball"><img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball"> 
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball"><img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball"> 
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball"><img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball"> 
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball"><img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball"> 
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball"><img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball"> 
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball"><img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball"> 
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball"><img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball"> 
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+    <img src="images/bee_okay.png" class="ball">
+  </div>
 
-                const pushRadius = 120; // How close your mouse needs to get before pushing
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  // ---------- CONFIG / TOGGLES ----------
+  const config = {
+    mouseAttractionStrength: 0.12,
+    maxSpeed: 6,
+    maxForce: 1.8,            // ← stronger turning power
 
-                if (distance < pushRadius) {
-                    // Strength of push
-                    const force = (pushRadius - distance) / pushRadius;
+    separationEnabled: true,
+    separationDistance: 120,  // ← large buffer
+    separationStrength: 3.5,  // ← strong repulsion
 
-                    const moveX = dx * force * 2;
-                    const moveY = dy * force * 2;
+    orbitEnabled: false,
+    orbitRadius: 80,
+    orbitStrength: 0.5,
 
-                    ball.style.left = (ballX + moveX - rect.width / 2) + 'px';
-                    ball.style.top = (ballY + moveY - rect.height / 2) + 'px';
-                }
-        });
-    });
+    wanderEnabled: false,
+    wanderStrength: 0.25,
+
+    edgeAvoidEnabled: false,
+    edgeMargin: 30,
+    edgeStrength: 1.2,
+
+    boidsEnabled: false,
+    cohesionStrength: 0.002,
+    alignmentStrength: 0.05,
+    cohesionNeighborhood: 180,
+    alignmentNeighborhood: 120,
+};
+
+  // ---------- SETUP ----------
+  const beeNodes = Array.from(document.querySelectorAll(".ball"));
+  if (beeNodes.length === 0) return;
+
+  // Internal state for each bee
+  const bees = beeNodes.map(el => {
+    // start at the element's position if already set, otherwise random
+    const startX = Math.random() * window.innerWidth;
+    const startY = Math.random() * window.innerHeight;
+    el.style.position = "absolute";
+
+    // use translate for smooth animation
+    el.style.left = "0px";
+    el.style.top  = "0px";
+
+    return {
+      el,
+      x: startX,
+      y: startY,
+      vx: (Math.random() - 0.5) * 2,
+      vy: (Math.random() - 0.5) * 2,
+      // optional: give each bee a tiny personal phase for variety
+      noisePhase: Math.random() * Math.PI * 2,
+    };
+  });
+
+  // mouse or touch
+  let mouseX = window.innerWidth / 2;
+  let mouseY = window.innerHeight / 2;
+  let mousePresent = false;
+
+  document.addEventListener("mousemove", (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    mousePresent = true;
+  });
+  document.addEventListener("mouseleave", () => mousePresent = false);
+  document.addEventListener("touchmove", (e) => {
+    if (e.touches && e.touches[0]) {
+      mouseX = e.touches[0].clientX;
+      mouseY = e.touches[0].clientY;
+      mousePresent = true;
+    }
+  }, {passive: true});
+
+  // helpers
+  function limit(vx, vy, max) {
+    const s = Math.hypot(vx, vy);
+    if (s > max && s > 0) {
+      const f = max / s;
+      return [vx * f, vy * f];
+    }
+    return [vx, vy];
+  }
+
+  // ---------- MAIN LOOP ----------
+  function animate() {
+    // gather spatial info once per frame
+    const positions = bees.map(b => ({ x: b.x, y: b.y }));
+
+    for (let i = 0; i < bees.length; i++) {
+      const b = bees[i];
+
+      // Steering accumulators
+      let steerX = 0;
+      let steerY = 0;
+
+      // --- mouse attraction (primary behavior) ---
+      if (mousePresent) {
+        const dx = mouseX - b.x;
+        const dy = mouseY - b.y;
+        const dist = Math.hypot(dx, dy) || 1;
+        // unit vector toward mouse
+        let ux = dx / dist;
+        let uy = dy / dist;
+
+        // basic attraction force (scaled by distance)
+        const attraction = config.mouseAttractionStrength;
+        steerX += ux * attraction * (dist / 100); // farther bees can be pulled faster
+        steerY += uy * attraction * (dist / 100);
+      }
+
+      // --- separation (prevent bunching) ---
+      if (config.separationEnabled) {
+        let repX = 0;
+        let repY = 0;
+        let neighbors = 0;
+        for (let j = 0; j < bees.length; j++) {
+          if (i === j) continue;
+          const other = positions[j];
+          const dx = b.x - other.x;
+          const dy = b.y - other.y;
+          const dist = Math.hypot(dx, dy);
+          if (dist > 0 && dist < config.separationDistance) {
+            // stronger push when very close
+            const push = (config.separationDistance - dist) / config.separationDistance;
+            repX += (dx / dist) * push;
+            repY += (dy / dist) * push;
+            neighbors++;
+          }
+        }
+        if (neighbors > 0) {
+          repX /= neighbors;
+          repY /= neighbors;
+          steerX += repX * config.separationStrength;
+          steerY += repY * config.separationStrength;
+        }
+      }
+
+      // --- OPTIONAL: boids cohesion & alignment ---
+      if (config.boidsEnabled) {
+        // cohesion: steer toward average position of neighbors
+        let cohX = 0, cohY = 0, cohCount = 0;
+        // alignment: steer toward average velocity of neighbors
+        let aliX = 0, aliY = 0, aliCount = 0;
+
+        for (let j = 0; j < bees.length; j++) {
+          if (i === j) continue;
+          const other = bees[j];
+          const dx = other.x - b.x;
+          const dy = other.y - b.y;
+          const dist = Math.hypot(dx, dy);
+          if (dist < config.cohesionNeighborhood) {
+            cohX += other.x;
+            cohY += other.y;
+            cohCount++;
+          }
+          if (dist < config.alignmentNeighborhood) {
+            aliX += other.vx;
+            aliY += other.vy;
+            aliCount++;
+          }
+        }
+
+        if (cohCount > 0) {
+          cohX = cohX / cohCount;
+          cohY = cohY / cohCount;
+          const dx = cohX - b.x;
+          const dy = cohY - b.y;
+          steerX += dx * config.cohesionStrength;
+          steerY += dy * config.cohesionStrength;
+        }
+
+        if (aliCount > 0) {
+          aliX = aliX / aliCount;
+          aliY = aliY / aliCount;
+          steerX += (aliX - b.vx) * config.alignmentStrength;
+          steerY += (aliY - b.vy) * config.alignmentStrength;
+        }
+      }
+
+      // --- OPTIONAL: orbit around mouse ---
+      if (config.orbitEnabled && mousePresent) {
+        const dx = b.x - mouseX;
+        const dy = b.y - mouseY;
+        const dist = Math.hypot(dx, dy) || 0.0001;
+        // want dist ~ orbitRadius
+        const radialError = dist - config.orbitRadius;
+        // radial correction toward desired orbit radius
+        steerX += (-dx / dist) * (radialError > 0 ? config.orbitStrength * 0.6 : config.orbitStrength);
+        steerY += (-dy / dist) * (radialError > 0 ? config.orbitStrength * 0.6 : config.orbitStrength);
+        // apply tangential force to move around (perpendicular)
+        const tangential = config.orbitStrength * 0.6;
+        steerX += (-dy / dist) * tangential;
+        steerY += (dx / dist) * tangential;
+      }
+
+      // --- OPTIONAL: wander ---
+      if (config.wanderEnabled) {
+        b.noisePhase += (Math.random() - 0.5) * 0.5;
+        steerX += Math.cos(b.noisePhase) * config.wanderStrength;
+        steerY += Math.sin(b.noisePhase) * config.wanderStrength;
+      }
+
+      // --- OPTIONAL: edge avoidance ---
+      if (config.edgeAvoidEnabled) {
+        const margin = config.edgeMargin;
+        if (b.x < margin) steerX += (margin - b.x) / margin * config.edgeStrength;
+        if (b.y < margin) steerY += (margin - b.y) / margin * config.edgeStrength;
+        if (b.x > window.innerWidth - margin) steerX -= (b.x - (window.innerWidth - margin)) / margin * config.edgeStrength;
+        if (b.y > window.innerHeight - margin) steerY -= (b.y - (window.innerHeight - margin)) / margin * config.edgeStrength;
+      }
+
+      // ---------- apply steering force ----------
+      // cap the steering force so behavior is smooth
+      [steerX, steerY] = limit(steerX, steerY, config.maxForce);
+
+      // update velocity
+      b.vx += steerX;
+      b.vy += steerY;
+
+      // cap speed
+      [b.vx, b.vy] = limit(b.vx, b.vy, config.maxSpeed);
+
+      // update position
+      b.x += b.vx;
+      b.y += b.vy;
+
+      // keep them inside window bounds a bit (wrap or clamp?) - we'll clamp here
+      if (b.x < -100) b.x = window.innerWidth + 100;
+      if (b.y < -100) b.y = window.innerHeight + 100;
+      if (b.x > window.innerWidth + 100) b.x = -100;
+      if (b.y > window.innerHeight + 100) b.y = -100;
+
+      // render using transform for better perf
+      b.el.style.transform = `translate3d(${b.x}px, ${b.y}px, 0)`;
+    }
+
+    requestAnimationFrame(animate);
+  }
+
+  // start the loop
+  requestAnimationFrame(animate);
+
+  // OPTIONAL: handle resize so bees don't vanish
+  window.addEventListener("resize", () => {
+    // no heavy operations — just allow bees to continue with new bounds
+  });
+});
 </script>
+    <footer>
+        <a href="#">About Me</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Email</a>
+        <a href="#">Socials</a>
+    </footer>
 </body>
 </html>

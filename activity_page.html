@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Page</title>
+    <link rel="stylesheet" href="index_style.css">
+</head>
+<body> 
+    <header class="main-header">
+            <div class="logo">1000 Bees</div>
+            <div class="branding">
+                <img id="logo" src="../wdd130-knowles/images/logo.png" alt="Logo for da bee">
+            </div>
+            <nav class="main-nav">
+                <a href="activity_page.html" class="nav-link">Activity Page</a>
+            </nav>
+        </header>
+    <h1 id="flashcards">
+        Flashcards
+    </h1>
+    <div id="flashcard-container">
+        <div id="card1" class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h2 class="Q">Q: Why are bees important to our food supply?</h2>
+                </div>
+                <div class="card-back">
+                    <p class="A">A: Bees pollinate about one-third of the crops humans eat, including fruits, nuts, and vegetables.</p>
+                </div>
+            </div>
+        </div>
+        <div id="card2" class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h2 class="Q">Q: Do all bees make honey?</h2>
+                </div>
+                <div class="card-back">
+                    <p class="A">A: No. Only honeybees make honey — most bee species are solitary and don’t produce any.</p>
+                </div>
+            </div>
+        </div>
+        <div id="card3" class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h2 class="Q">Q: How do bees find their way home?</h2>
+                </div>
+                <div class="card-back">
+                    <p class="A">A: Bees navigate using the sun, landmarks, and even the Earth’s magnetic field.</p>
+                </div>
+            </div>
+        </div>
+        <div id="card4" class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h2 class="Q">Q: What is the “waggle dance”?</h2>
+                </div>
+                <div class="card-back">
+                    <p class="A">A: It’s how bees communicate distance and direction to food sources through movement patterns.</p>
+                </div>
+            </div>
+        </div>
+        <div id="card5" class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h2 class="Q">Q: How many flowers can a bee visit in one day?</h2>
+                </div>
+                <div class="card-back">
+                    <p class="A">A: A single bee can visit 2,000+ flowers per day while collecting nectar and pollen.</p>
+                </div>
+            </div>
+        </div>
+        <div id="card6" class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h2 class="Q">Q: Can bees recognize human faces?</h2>
+                </div>
+                <div class="card-back">
+                    <p class="A">A: Yes! Studies show bees can remember and distinguish human faces using pattern recognition.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            card.addEventListener('click', () => {
+                card.classList.toggle('flipped');
+            });
+        });
+    </script>
+</body>   
+</html>
