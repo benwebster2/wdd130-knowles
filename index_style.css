@@ -46,11 +46,20 @@ h1 {
   src: url('fonts/Sarina-Regular.ttf') format('Sarina'),
 }
 /* CSS for activity page */
+
+#flashcards{
+    background-color: #A23528;
+    padding: 10px;
+    border: 5px solid black;
+    color: white;
+    border-radius: 5px;
+    margin-left: 40%;
+    margin-right: 40%;
+}
 #flashcard-container{
     display: grid;
-    grid-template-columns: 1fr 300px 1fr 300px 1fr;
+    grid-template-columns: 1fr 310px 1fr 310px 1fr;
     padding: 50px;
-    
 }
 #card1{
     grid-column: 2 / 3;
@@ -81,17 +90,15 @@ h1 {
 }
 .card-inner {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
+  padding: 5%;
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
 }
 .card.flipped .card-inner {
   transform: rotateY(180deg);
-}
-.card-back{
-    padding-left: 10%;
 }
 .card-front, .card-back {
   position: absolute;
@@ -101,16 +108,19 @@ h1 {
 }
 .card-back {
   transform: rotateY(180deg);
+  width: 80%;
 }
 .Q{
     font-family:'Sarina Regular';
     font-weight: bold;
     font-size: 30px;
+    color: white;
 }
 .A{
     font-family:'Sarina Regular';
     font-weight: normal;
     font-size: 20px;
+    color: white;
 }
 body {
     margin: 0;
